@@ -18,7 +18,7 @@ ul {
 }
 
 .graph_container {
-  /* padding: 10px; */
+  width: 360px;
   height: 200px;
   border: 1px solid rgb(173, 171, 171);
   background-color: rgb(235, 229, 229);
@@ -35,14 +35,11 @@ ul {
   color: lightsteelblue;
   margin-inline: 10px;
   height: 100%;
+  width: 100%;
 }
-
 
 .labels {
-  padding: 0;
+  padding: 10px;
   display: flex;
-}
-
-.label {
-  margin: 17px;
+  justify-content: space-around;
 }

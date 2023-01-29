@@ -22,14 +22,17 @@ const BarGraph = ({ data }) => {
           <li
             key={idx}
             className="bar"
-            style={{ backgroundColor: getBarColor(idx), minWidth: '25px', height: getBarHeight(bar.value) }}
+            style={{ backgroundColor: getBarColor(idx), minHeight: '5px', height: getBarHeight(bar.value) }}
           ></li>
         ))}
 
         </ul>
       </div>
-      <ul className="labels">{data.map((bar, index) => (
-        <li key={index} className="label">
+      <ul className="labels" style={{ gap: '5%' }}>{data.map((bar, index) => (
+        <li
+          key={index}
+          className="label"
+        >
           {bar.label}
         </li>
       ))}
