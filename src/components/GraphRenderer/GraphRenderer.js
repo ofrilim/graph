@@ -4,7 +4,6 @@ import "./GraphRenderer.scss";
 const GraphRenderer = ({ render, data }) => {
     const [count, setCount] = useState(data.length);
     const dataSlice = useMemo(() => data.slice(0, count), [data, count]);
-
     return (
         <div className="graph-renderer">
             <header className="buttons">

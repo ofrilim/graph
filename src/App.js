@@ -8,7 +8,7 @@ const App = () => (
     <GraphRenderer
         data={DATA}
         render={(data) => (
-            <BarGraph/>
+            <BarGraph data={data}/>
         )}
     />
 );
