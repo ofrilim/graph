@@ -39,7 +39,7 @@ ul {
 }
 
 .labels {
-  padding: 10px;
+  padding-top: 10px;
   display: flex;
   justify-content: space-around;
 }

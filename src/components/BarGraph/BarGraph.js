@@ -11,8 +11,9 @@ const BarGraph = ({ data }) => {
   }
 
   const getBarHeight = (value) => {
-    const percentage = (value / maxValue) * 100;
-    return percentage + '%';
+    const barPercantageHeight = (value / maxValue) * 100;
+
+    return barPercantageHeight + '%';
   }
 
   return (
@@ -28,13 +29,8 @@ const BarGraph = ({ data }) => {
 
         </ul>
       </div>
-      <ul className="labels" style={{ gap: '5%' }}>{data.map((bar, index) => (
-        <li
-          key={index}
-          className="label"
-        >
-          {bar.label}
-        </li>
+      <ul className="labels">{data.map((bar, idx) => (
+        <li key={idx}>{bar.label}</li>
       ))}
       </ul>
     </>
